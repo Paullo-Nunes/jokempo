@@ -5,6 +5,11 @@ const result = document.querySelector('.result');
 const pointer = document.querySelector('.pointer');
 const alexa = document.querySelector('.alexa');
 
+//Atribuindo valores aos spans
+
+let pointerValue = 0;
+let alexaValue = 0;
+
 // pegando cada elemento dos botões
 
 const playHuman = (humanChoice) => {
