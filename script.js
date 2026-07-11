@@ -1,7 +1,7 @@
 // pegando cada elemento dos botões
 
 const playHuman = (humanChoice) => {
-    
+    playTheGame(humanChoice, playMachine());
 }
 
 const playMachine = () => {
