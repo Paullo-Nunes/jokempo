@@ -1,3 +1,6 @@
+// Pegando o paragrafo de resultado
+const result = document.querySelector('.result');
+
 // pegando cada elemento dos botões
 
 const playHuman = (humanChoice) => {
@@ -17,4 +20,17 @@ const playMachine = () => {
 const playTheGame = (human, machine) => {
     console.log(" Escolha do humano: " + human + " Escolha da máquina: " + machine);
 
+    if (human === machine) {
+        result.innerHTML = "Empate!";
+    } else if ((human === 'rock' && machine === 'scissors') || (human === 'paper' && machine === 'rock') || (human === 'scissors' && machine === 'paper')) {
+        result.innerHTML = "Você ganhou!";
+    } else {
+        result.innerHTML = "Você perdeu!";
+    }
+
 }
+
+// Regras do jogo:
+// Pedra vence Tesoura
+// Tesoura vence Papel
+// Papel vence Pedra
