@@ -25,6 +25,7 @@ body {
     margin: 25em auto;
     background-color: #fff;
     border-radius: 10px;
+    position: relative;
 }
 
 h1 {
@@ -75,4 +76,11 @@ button:hover {
 p {
     font-family: "Geist Pixel", sans-serif;
     font-weight: bold;
+}
+
+.menu {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
 }
