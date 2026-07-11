@@ -78,9 +78,13 @@ p {
     font-weight: bold;
 }
 
-.menu {
+.menu, .close {
     position: absolute;
     cursor: pointer;
     top: 15px;
     right: 15px;
+}
+
+.close {
+    display: none;
 }
