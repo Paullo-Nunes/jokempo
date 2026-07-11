@@ -10,6 +10,13 @@ const alexa = document.querySelector('.alexa');
 let pointerValue = 0;
 let alexaValue = 0;
 
+//usando o ENUM
+const GAME_OPTIONS = {
+    ROCK: 'rock',
+    PAPER: 'paper',
+    SCISSORS: 'scissors'
+};
+
 // pegando cada elemento dos botões
 
 const playHuman = (humanChoice) => {
@@ -17,7 +24,7 @@ const playHuman = (humanChoice) => {
 }
 
 const playMachine = () => {
-    const choices = ['rock', 'paper', 'scissors'];
+    const choices = [GAME_OPTIONS.ROCK, GAME_OPTIONS.PAPER, GAME_OPTIONS.SCISSORS];
 
     const randomNumber = Math.floor(Math.random() * choices.length);
 
@@ -31,7 +38,7 @@ const playTheGame = (human, machine) => {
 
     if (human === machine) {
         result.innerHTML = "Empate!";
-    } else if ((human === 'rock' && machine === 'scissors') || (human === 'paper' && machine === 'rock') || (human === 'scissors' && machine === 'paper')) {
+    } else if ((human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS) || (human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK) || (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)) {
         pointerValue++;
         pointer.innerHTML = pointerValue;
         result.innerHTML = "Você ganhou!";
