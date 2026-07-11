@@ -1,6 +1,24 @@
 // Pegando o paragrafo de resultado
 const result = document.querySelector('.result');
 
+// pegando a imagem e fazendo a troca de src
+const image = document.querySelector('.menu');
+const close = document.querySelector('.close');
+
+let isMenuOpen = false;
+
+const toggleMenu = () => {
+    if (isMenuOpen) {
+        image.src = './img/icons8-cardápio.svg';
+        close.style.display = 'none';
+    } else {
+        image.src = './img/icons8-close.svg';
+        close.style.display = 'block';
+    }
+
+    isMenuOpen = !isMenuOpen;
+};
+
 //pegando cada span
 const pointer = document.querySelector('.pointer');
 const alexa = document.querySelector('.alexa');
