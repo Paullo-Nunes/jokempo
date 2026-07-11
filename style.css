@@ -22,7 +22,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    margin: 25em auto;
+    margin: 20em auto;
     background-color: #fff;
     border-radius: 10px;
     position: relative;
@@ -87,4 +87,11 @@ p {
 
 .close {
     display: none;
+}
+
+.regras {
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    right: 38px;
 }
