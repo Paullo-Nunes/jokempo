@@ -15,6 +15,6 @@ const playMachine = () => {
 }
 
 const playTheGame = (human, machine) => {
-    console.log(" Escola do humano: " + human + " Escola da máquina: " + machine);
+    console.log(" Escolha do humano: " + human + " Escolha da máquina: " + machine);
 
 }
