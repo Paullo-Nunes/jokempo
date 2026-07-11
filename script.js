@@ -5,15 +5,20 @@ const result = document.querySelector('.result');
 const image = document.querySelector('.menu');
 const close = document.querySelector('.close');
 
+//mapeando o parágrafo das regras do jogo
+const rules = document.querySelector('.regras');
+
 let isMenuOpen = false;
 
 const toggleMenu = () => {
     if (isMenuOpen) {
-        image.src = './img/icons8-cardápio.svg';
+        rules.style.display = 'none';
+        image.style.display = 'inline';
         close.style.display = 'none';
     } else {
-        image.src = './img/icons8-close.svg';
-        close.style.display = 'block';
+        rules.style.display = 'block';
+        image.style.display = 'none';
+        close.style.display = 'inline';
     }
 
     isMenuOpen = !isMenuOpen;
