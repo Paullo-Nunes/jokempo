@@ -1,6 +1,10 @@
 // Pegando o paragrafo de resultado
 const result = document.querySelector('.result');
 
+//pegando cada span
+const pointer = document.querySelector('.pointer');
+const alexa = document.querySelector('.alexa');
+
 // pegando cada elemento dos botões
 
 const playHuman = (humanChoice) => {
