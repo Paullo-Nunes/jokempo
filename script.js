@@ -1,8 +1,7 @@
 // pegando cada elemento dos botões
 
 const playHuman = (humanChoice) => {
-    console.log(humanChoice);
-    console.log(playMachine());
+    
 }
 
 const playMachine = () => {
@@ -13,4 +12,9 @@ const playMachine = () => {
     console.log(randomNumber);
 
     return choices[randomNumber];
+}
+
+const playTheGame = (human, machine) => {
+    console.log(" Escola do humano: " + human + " Escola da máquina: " + machine);
+
 }
