@@ -38,7 +38,9 @@ const playTheGame = (human, machine) => {
 
     if (human === machine) {
         result.innerHTML = "Empate!";
-    } else if ((human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS) || (human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK) || (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)) {
+    } else if ((human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS) ||
+        (human === GAME_OPTIONS.PAPER && machine === GAME_OPTIONS.ROCK) ||
+        (human === GAME_OPTIONS.SCISSORS && machine === GAME_OPTIONS.PAPER)) {
         pointerValue++;
         pointer.innerHTML = pointerValue;
         result.innerHTML = "Você ganhou!";
