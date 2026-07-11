@@ -32,8 +32,12 @@ const playTheGame = (human, machine) => {
     if (human === machine) {
         result.innerHTML = "Empate!";
     } else if ((human === 'rock' && machine === 'scissors') || (human === 'paper' && machine === 'rock') || (human === 'scissors' && machine === 'paper')) {
+        pointerValue++;
+        pointer.innerHTML = pointerValue;
         result.innerHTML = "Você ganhou!";
     } else {
+        alexaValue++;
+        alexa.innerHTML = alexaValue;
         result.innerHTML = "Você perdeu!";
     }
 
