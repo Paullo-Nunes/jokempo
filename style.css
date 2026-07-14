@@ -85,13 +85,10 @@ p {
     right: 15px;
 }
 
-.close {
-    display: none;
-}
-
 .regras {
     font-size: 12px;
     position: absolute;
     top: 12px;
     right: 38px;
+    cursor: pointer;
 }
