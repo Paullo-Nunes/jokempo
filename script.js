@@ -10,6 +10,16 @@ const rules = document.querySelector('.regras');
 
 let isMenuOpen = false;
 
+rules.style.display = 'none';
+close.style.display = 'none';
+
+const showMenu = () => {
+    rules.style.display = 'block';
+    image.style.display = 'inline';
+};
+
+rules.addEventListener('click', showMenu);
+
 const toggleMenu = () => {
     if (isMenuOpen) {
         rules.style.display = 'none';
