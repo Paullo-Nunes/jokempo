@@ -6,16 +6,17 @@
 }
 
 body {
-    background: url('https://picsum.photos/1920/1080');
+    background: linear-gradient(135deg, #186b88 0%, #1c4596 35%, #42187b 70%, #991c7a 100%);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
 }
 
 .container {
-    border: 1px solid #000;
     max-width: fit-content;
     align-items: center;
     justify-content: center;
@@ -26,6 +27,26 @@ body {
     background-color: #fff;
     border-radius: 10px;
     position: relative;
+}
+
+@media (max-width: 573px) {
+    .container, .botoes {
+        width: 100%;
+        gap: 10px;
+        padding: 5px;
+    }
+    #rock, #paper, #scissors {
+        padding: 15px;
+        font-size: 20px;
+        width: 30%;
+        height: 30%;
+    }
+    body {
+        background-size: cover;
+        background: linear-gradient(135deg, #186b88 0%, #1c4596 35%, #42187b 70%, #991c7a 100%);
+        background-position: -50px -50px;
+   }
+
 }
 
 h1 {

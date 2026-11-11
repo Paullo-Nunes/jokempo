@@ -61,14 +61,10 @@ const playMachine = () => {
 
     const randomNumber = Math.floor(Math.random() * choices.length);
 
-    console.log(randomNumber);
-
     return choices[randomNumber];
 }
 
 const playTheGame = (human, machine) => {
-    console.log(" Escolha do humano: " + human + " Escolha da máquina: " + machine);
-
     if (human === machine) {
         result.innerHTML = "Empate!";
     } else if ((human === GAME_OPTIONS.ROCK && machine === GAME_OPTIONS.SCISSORS) ||
