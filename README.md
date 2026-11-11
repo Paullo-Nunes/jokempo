@@ -2,6 +2,8 @@
 
 Um jogo de pedra, papel e tesoura para jogar no navegador. Escolha uma opção e dispute uma rodada contra a máquina; o placar acompanha as vitórias de cada lado.
 
+![Imagem do jogo](./img/img-jokempo.png)
+
 ## Como jogar
 
 1. Abra o jogo no navegador.
