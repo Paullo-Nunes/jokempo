@@ -30,22 +30,28 @@ body {
 }
 
 @media (max-width: 573px) {
-    .container, .botoes {
+
+    .container,
+    .botoes {
         width: 100%;
         gap: 10px;
         padding: 5px;
     }
-    #rock, #paper, #scissors {
+
+    #rock,
+    #paper,
+    #scissors {
         padding: 15px;
         font-size: 20px;
         width: 30%;
         height: 30%;
     }
+
     body {
         background-size: cover;
         background: linear-gradient(135deg, #186b88 0%, #1c4596 35%, #42187b 70%, #991c7a 100%);
         background-position: -50px -50px;
-   }
+    }
 
 }
 
@@ -99,7 +105,8 @@ p {
     font-weight: bold;
 }
 
-.menu, .close {
+.menu,
+.close {
     position: absolute;
     cursor: pointer;
     top: 15px;
